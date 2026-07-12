@@ -388,6 +388,7 @@ section + section { border-top: 1px solid var(--line); }
 }
 
 .entry-card {
+  position: relative;
   display: grid;
   grid-template-columns: 220px 1fr;
   gap: 28px;
@@ -422,7 +423,6 @@ section + section { border-top: 1px solid var(--line); }
 
 .entry-top {
   display: flex;
-  justify-content: space-between;
   align-items: flex-start;
   gap: 16px;
   flex-wrap: wrap;
@@ -433,9 +433,13 @@ section + section { border-top: 1px solid var(--line); }
   font-family: var(--f-display);
   font-weight: 600;
   font-size: 21px;
+   padding-right: 160px;
 }
 
 .entry-time {
+  position: absolute;
+  top: 24px;
+  right: 24px; 
   font-family: var(--f-mono);
   font-size: 11.5px;
   letter-spacing: 0.05em;
