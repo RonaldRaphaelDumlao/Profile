@@ -30,7 +30,25 @@
       <div class="bio-block">
         <p>The Small Satellite Laboratory's CubeSat Digital-Twin Research Program at Cal Poly Pomona aimed to develop a
         software architecture, hardware testbed, and simulative testing environment to support digital-twin technology 
-        for the school's 3U CubeSat project.</p>
+        for the school's CubeSat project. This consisted of the creation of a custom 3-DOF (Degrees Of Freedom) 
+        mechanically controllable gyroscope to mount the CubeSat, a control architecture for the gyroscope, digital-twin
+        simulation software, and digital testing domain.</p>
+        <p>I was responsible for the research and development of the mechnical gyroscope. After months of conceptual
+        design and prototyping, I, among a couple other student researchers, pitched the idea of the 3-DOF CubeSat 
+        gyro platform to Quanser Inc. and were able to secure approval and development of it, as well as Quanser 
+        as a funding partner for the research.</p>
+        <p>While the custom gyro was being developed, I built a working control architecture for it using MATLAB 
+        and Simulink. It can control the position, rotational speed, acceleration, and direction of the gyro. 
+        I used a commercially bought Quanser gyro to test this control scheme. I performed many open- and closed-loop 
+        tests, making hardware response times and transient states as fast as possible, as well as steady-state 
+        values as accurate as possible to input values. Furthermore, I identified and troubleshot many issues with 
+        the Quanser hardware itself, having to recalibrate faulty internal sensors and actuators.</p>
+        <p>After the control architecture, I co-authored preliminary digital-twin testing procedures that outlined
+        different testing schemes to perform on the CubeSat and broadly how to do it. The procedures were based on
+        best practices outlined within the NASA Operational Simulator for Space Systems (NOS3) guidelines for
+        integration between physical and cirtual models, recommended tests to perform, and how to gather data
+        properly. The idea was to provide a framework for students carrying on the program with the intention of 
+        further developing it, once details of the project get more fleshed-out.</p>
       </div>
     </div>
   </section>
