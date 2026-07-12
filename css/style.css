@@ -446,7 +446,7 @@ section + section { border-top: 1px solid var(--line); }
   color: var(--accent);
   border: 1px solid var(--accent-soft);
   background: var(--accent-soft);
-  padding: 6px 14px;
+  padding: 6px 6px;
   white-space: nowrap;
 }
 
