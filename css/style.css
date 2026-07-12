@@ -427,7 +427,7 @@ section + section { border-top: 1px solid var(--line); }
   gap: 16px;
   flex-wrap: wrap;
   margin-bottom: 6px;
-  margin-top: 30px; 
+  margin-top: 15px; 
 }
 
 .entry-name {
