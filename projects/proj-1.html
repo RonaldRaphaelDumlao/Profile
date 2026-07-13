@@ -28,11 +28,48 @@
     <div class="wrap">
       <div class="eyebrow">Overview</div>
       <div class="bio-block">
-        <div class="placeholder-line"></div>
-        <div class="placeholder-line"></div>
-        <div class="placeholder-line"></div>
-        <div class="placeholder-line"></div>
-        <p class="bio-note">// Write an overview of this project here — the goal, your role, tools/methods used, and the outcome.</p>
+        <p>CubeSTEP was a senior project that I did for my last year at Cal Poly Pomona. It was a NASA JPL funded project
+        that aimed to develop and launch a 3U Cube Satellite (CubeSat), called Cerberus, into Low-Earth Orbit (LEO) to 
+        document research on 3 different oscillating heat pipes (OHP). This was meant to increase the technology readiness 
+        of OHPs to justify their use on larger spacecraft in LEO. This project started in 2022 with initial multi-million 
+        dollar funding from NASA JPL, and when I graduated in May 2026, the project was nearing full satellite assembly and 
+        integration, and hoping to be ready for launch later in the year.</p>
+        <p>I joined the project after the team had just conducted their Critical Design Review (CDR) with NASA JPL, and 
+        were approved to proceed to final design manufacturing and integration. I took on the role of Responsible Engineer
+        for the Attitude Determination & Control System (ADCS) and the Electrical Power System (EPS) on the project's 
+        Flight Hardware team. At this point, all the design work was complete and the parts ordered. My job was to be the 
+        point of contact for both the ADCS and EPS, and complete their assembly, integration, and testing (AIT) so that 
+        they may be flight ready for full satellite integration.</p>
+        <p>The ADCS hardware was composed of a magnetorquer and sun sensors, while the EPS hardware was composed of a 
+        battery pack, power distribution module (PDM), and solar arrays. My initial responsibilities were to conduct 
+        documentation of each subsystem's capabilities, interfaces, and testability. I authored 2 Interface Control 
+        Documents (ICD) for both the subsystems, which defined how they communicated and exchanged data with the 
+        satellite's On-Board Computer (OBC). These documents established the exact boundaries, protocols, formats, 
+        and physical connections required for integration with their software. This made it easy for the Flight 
+        Software team to build their command and telemetry program.</p>
+        <p>The bulk of my work on this project was facilitating AIT of the ADCS and EPS. Most of the hardware components, 
+        which were all ordered commercial-off-the-shelf (COTS) components, required bench validation to be performed on 
+        each one to confirm nominal functionality (i.e. do the components turn on, respond to stimuli, etc). I authored 
+        validation testing procedures for the sun sensors, battery pack, PDM, and solar arrays, which were written in 
+        compliance with NASA GEVS, a foundational aerospace standard to determine if flight hardware meets minimum 
+        testing requirements for safe use on spacecraft. I then conducted these procedures myself in a cleanroom setting 
+        in accordance with the NASA SSRI guidelines for cleanroom safety and recommended precations & protocols. I was 
+        able to successfully sign off on the bench validation of all ADCS and EPS hardware, which allowed the team to 
+        proceed with subsystem integration.</p>
+        <p>Towards the end of my time with the project, I was able to work with FlatSat testbed integration, as well as
+        Hardware-In-The-Loop (HITL) testing. FlatSat testbeds are essentially engineering models where components of the 
+        satellite subsystems are laid out flat on a workbench, rather than in their final stacked form inside of the 
+        satellite structure. HITL tests are performed in order to observe how the hardware reacts to commands from 
+        connected software, as well as how they react to external stimuli and if they can send accurate telemetry/data 
+        back to the software user interface due to that external stimuli. Various tests were conducted this way, such as 
+        thermal sensitivity tests, light detection tests on the sun sensors, power output tests for the battery and PDM, 
+        sunlight power draw tests for the solar arrays, and many tests to determine how the hardware reacted to specific
+        user commands. From these, the team recorded data and compared them with what was typical for these systems, 
+        allowed us to troubleshoot anomalous behavior, and adjust the software and re-calibrate the hardware accordingly. 
+        </p>
+        <p>By the time I graduated, I was able to successfully sign off and approve of the complete flight readiness of 
+        the ADCS and EPS subsystems, making them eligible for full assembly and integration with the complete satellite 
+        system.</p>
       </div>
     </div>
   </section>
