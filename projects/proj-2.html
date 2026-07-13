@@ -35,11 +35,60 @@
     <div class="wrap">
       <div class="eyebrow">Overview</div>
       <div class="bio-block">
-        <div class="placeholder-line"></div>
-        <div class="placeholder-line"></div>
-        <div class="placeholder-line"></div>
-        <div class="placeholder-line"></div>
-        <p class="bio-note">// Write an overview of this project here — the goal, your role, tools/methods used, and the outcome.</p>
+        <p>Small Satellite Stationkeeping (S-Kubed) was an additional senior porject I did for my last year at Cal Poly 
+        Pomona. It was a NASA JPL and USAF funded project with the intention of developing a Helmholtz Cage testbed for 
+        small satellites, as well as conduct field tests and document research on its performance. A Helmholtz Cage is 
+        a structure that is capable of generating a contained magnetic field, using a set of three orthogonal copper 
+        coils running along all three axes. The purpose is to cancel out Earth's ambient magnetic field, and simulate 
+        the magnetic environment of space, and in our case, Low-Earth Orbit (LEO). This would allow the hardware 
+        components of the 3U CubeSat from CubeSTEP (see CubeSTEP section in Projects) to be tested in the environmental 
+        conditions it must operate in.</p>
+        <p>By the time I joined the project, the Helmholtz Cage had already been built, however little testing had been 
+        performed on it, and the testing that did get performed yielded issues with the circuitry of the cage overheating, 
+        an uneven structural frame, and a non-uniform and weak magnetic field. I was assigned to Hardware Testing on the 
+        cage itself, where I troubleshot exisiting issues, conducted performance tests on its capabilities, and tested the 
+        cage using physical flight hardware.</p>
+        <p>Initially, I worked on fixing the cage's aluminum structure. The frame is what controlled the orientation of the 
+        copper coils, and some parts of the frame were mis-aligned and felt dangerously loose. I managed to easily 
+        re-align the frame my adjusting some screws and bolts near the base of the structure, as well as some loose 
+        copper wire in different areas. I also designed and 3D printed some basic brackets and connectors to stiffen the 
+        corners and connecting junctions of the frame so that the cage was more structurally sturdy.</p>
+        <p>I then transitioned to performing diagnostic tests on the cage to ensure its electronics are stable while it's
+        running, as well as to analyze the quality of the magnetic field it generates. The team was able to build new 
+        circuits and a cooling system to prevent the electronics from overheating, however the magnetic field was still 
+        weak and distorted in some areas as read by a magnetometer, and it took us nearly the whole academic year to 
+        figure out that the non-uniformity was caused by the bolts and connectors around the frame being made of steel, 
+        which is a ferrous material. Steel is a magnetic material, so the outer areas of the magnetic field were getting 
+        absorbed and deflected by the steel around it. I, along with a couple of other members, were tasked with completely 
+        disassembling the cage, replacing all the steel connectors with brass ones, and reassembling it. This took many 
+        nights of careful tooling, execution, and organization since there were hundreds of steel connectors that needed 
+        replacing, and we needed to make sure that the each of the coils were reassembled into their specific orientations.</p>
+        <p>The bulk of my work on the project came with designing, 3D printing, and building a simple mock model of the 
+        CubeSTEP Cerberus CubeSat, that mimicked its mass and inertia properties. The purpose of this was to conduct 
+        hardware testing on the satellite's flight hardware on a similar frame, while the actual satellite is yet to be 
+        fully assembled. I used Siemens NX to design the model, and the existing mass and inertia properties of the 
+        satellite for reference. I created a system of small weighted cubes that could be oriented in a specific way 
+        inside of the 3U frame to match the properties of the actual satellite. The mass properties were simply 
+        measured using a scale, while the inertia properties were measured using a trifular pendulum to determine the 
+        exact mass moment of inertia values on all three axes. The mass came with a 5% error, while the inertias came 
+        with a cumulative error of 9%, but for a basic model, this was considered fine to use as a prototype.</p>
+        <p>Additionally, I designed a hardware testing platform meant to go atop an air-bearing stand, where the 
+        CubeSat could be safely mounted, as well as rotate freely and tilt to some degree. With the movable mount, I 
+        also designed a counter-weight system that allowed the system to have a neutral torque, meaning that if the 
+        CubeSat and mount were to tilt, they would stay in that position rather than restoring back to normal standing 
+        position. Both of these parts had to be manufactured out of stainless steel, so I created drawings of each of 
+        the parts using GD&T standards, specifying geometric tolerances in flatness, surface profile, and position. To 
+        go along with this, I created a quality check list using AS9100 guideliness, and worked closely with the on-campus 
+        machinists and technicians to create these parts.</p>
+        <p>Since I was concurrently the Responsible Engineer for the ADCS subsystem on the CubeSTEP team, I was able to 
+        write procedures to test the sun sensors and magnetorquer inside of the Helmholtz cage using the testing hardware 
+        I designed. These testing procedures helped verify functionality and flight readiness of the ADCS subsystem.</p>
+        <p>Another outcome of being involved with both the S-Kubed and CubeSTEP teams was acting as the Liaison between 
+        them. On top of technical responsibilities, I also set up and led meetings between different teams and facilitated 
+        the exchange of important information, progress, and requests.</p>
+        <p>When I graduated, the project had a completely functional Helmholtz Cage with operational hardware and software, 
+        a mock CubeSat to use for further flight hardware testing, as well as a fully manufactured testing apparatus that 
+        was compatible for use inside the cage itself.</p>
       </div>
     </div>
   </section>
