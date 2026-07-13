@@ -579,7 +579,8 @@ section + section { border-top: 1px solid var(--line); }
 }
 
 .back-link {
-  display: inline-flex;
+  display: flex;
+  width: fit-content;
   align-items: center;
   gap: 8px;
   font-family: var(--f-mono);
@@ -653,7 +654,22 @@ section + section { border-top: 1px solid var(--line); }
   height: 100%;
   object-fit: contain;
 }
+
 .gallery-caption {
    text-align: center;
    width: 100%;
+}
+
+.skills-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  margin-top: 24px;
+}
+
+.skills-row .dot-sep {
+  color: var(--text-faint);
+  font-family: var(--f-mono);
+  font-size: 13px;
 }
