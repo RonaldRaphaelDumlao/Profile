@@ -35,11 +35,42 @@
     <div class="wrap">
       <div class="eyebrow">Overview</div>
       <div class="bio-block">
-        <div class="placeholder-line"></div>
-        <div class="placeholder-line"></div>
-        <div class="placeholder-line"></div>
-        <div class="placeholder-line"></div>
-        <p class="bio-note">// Write an overview of this project here — the goal, your role, tools/methods used, and the outcome.</p>
+        <p>This was a small university project I was involved in that aimed to improve the testing capabilities of the 
+        on-campus wind tunnel. The objective was to create a miniature electric propulsion thrust stand that was able to 
+        measure the thrust, RPM, and airspeed produced by a 9-inch propeller on a brushless DC motor. The electrical 
+        telemetry of the system, such as the voltage and current, had to be capable of being monitored in real-time. 
+        Additionally, the system required a hardware emergency-stop button.</p>
+        <p>I was assigned to be Project Manager of a small team of 6, as well as the motor subsystem designer. Most of 
+        the initial work was doing electrical analysis to determine what kind of parts we needed to order for the 
+        stand. This involved power calculations to determine what kind of motor would be sufficient to produce a required 
+        thrust with a specifically sized propeller, what different sensors would be needed to perform the data 
+        measurements, and what kind of battery would be needed to provide power to all these systems, as well as would 
+        they be electrically compatible with one another and be able to interface through physical connections. Various 
+        calculations were done by the team as well as KiCAD schematics created to justify the electrical interfaces of 
+        each of the subsystems individually and connected together. I performed power calculations, conducted 
+        research, and created KiCAD electrical schematics for the brushless DC motor, as well as the system in full. 
+        After our bill of materials and electrical schematics were approved by our advisors, I ordered the parts on 
+        commercially available sites, mostly from Amazon.</p>
+        <p>After the parts arrived, the team worked on building their respective subsystems, as well as a Graphic User 
+        Interface (GUI) to control the thrust stand and display telemetry data. I programmed an Arduino UNO R3 
+        microcontroller using Pulse Width Modulation (PWM) control architecture to dictate the RPM of the motor based 
+        on user specification. This means that the user is able to input a value to determine the speed at which the 
+        propeller spins, and is able to adjust that value while it's spinning. I collaborated with my team closely on 
+        this to ensure that each of our individual programs don't interfere with one another, and is able to interface 
+        seemlessly with the GUI.</p>
+        <p>I also responsibility conducting progress checks on my members, documenting calculations, organizing supplies, 
+        and ensuring that our design work corroborates with the project requirements. I was also the main point of contact 
+        to the advisors of the project on our progress, and wind tunnel personnel to determine how our prototype could get 
+        integrated into the wind tunnel.</p>
+        <p>At the end of the project, although not very visually flattering, we were able to create a fully functional 
+        electric motor thrust stand and GUI with a user controlled motor. It could accurately measure thrust that the 
+        motor and propeller were producing using a load cell to measure bending stress and converting that into thrust, 
+        it could measure RPM using an infrared sensor located just underneath the motor, and it could measure the air 
+        speed produced by the propeller and motor using a pressure sensor computing the difference between static 
+        pressure of the room and the dynamic pressure caused by the freestream. This data was also able to be displayed 
+        and dynamically plotted on the GUI as the sensors were gathering these measurements in real-time. We also ended 
+        up with a fully functional emergency-stop button that cut power from the battery to the motor once pressed. Our 
+        model was then handed off to the wind tunnel lab for further prototyping and integration.</p>
       </div>
     </div>
   </section>
